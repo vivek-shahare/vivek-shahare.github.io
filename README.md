@@ -1,15 +1,27 @@
-# vivek-shahare.github.io
+# Vivek Shahare — Academic Website
 
-Personal academic website for Vivek Shahare.
+Personal academic website for Vivek Shahare, designed for GitHub Pages.
 
-## Deploy with GitHub Pages
+## Local preview
 
-1. Create a GitHub repository named `vivek-shahare.github.io`.
-2. Copy these files into the repository.
-3. Commit and push to the `main` branch.
-4. In **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/root`.
-5. The site will be available at `https://vivek-shahare.github.io/`.
+This is a static HTML/CSS/JavaScript site. Open `index.html` directly in a browser, or run a local server such as:
 
-## Before publishing
+```bash
+python -m http.server 8000
+```
 
-Replace the placeholder email, Google Scholar, ORCID, LinkedIn, publication entries, and `assets/cv.pdf` with your real information.
+Then visit `http://localhost:8000`.
+
+## Deploy
+
+```bash
+git add .
+git commit -m "Expand academic website content"
+git push
+```
+
+The site is configured for `https://vivek-shahare.github.io`.
+
+## CV
+
+Add the latest CV as `assets/Vivek_Shahare_CV.pdf` and replace the CV placeholder link in `index.html` with `href="assets/Vivek_Shahare_CV.pdf"`.

@@ -3,79 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Vivek Shahare — researcher in concurrent algorithms, formal verification, high-performance computing, and compiler technologies.">
+  <meta name="description" content="Vivek Shahare — researcher in concurrent systems, high-performance computing, formal verification, and compiler technologies.">
   <title>Vivek Shahare | Researcher</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="container nav-wrap">
+  <nav class="nav container">
     <a class="brand" href="#home">Vivek Shahare</a>
-    <button class="menu" aria-label="Toggle navigation">☰</button>
-    <nav id="nav">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
-      <a href="#projects">Projects</a><a href="#teaching">Teaching</a><a href="#cv">CV</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
 <section id="home" class="hero">
   <div class="container hero-grid">
     <div>
-      <p class="eyebrow">Computer Science Researcher</p>
-      <h1>Building reliable and scalable systems for modern multicore machines.</h1>
-      <p class="lead">I work at the intersection of concurrent algorithms, synchronization, formal verification, high-performance computing, and compiler technologies.</p>
-      <div class="buttons"><a class="btn primary" href="#research">Explore my research</a><a class="btn" href="#contact">Get in touch</a></div>
+      <p class="eyebrow">Computer Science · Concurrent Systems · HPC</p>
+      <h1>Vivek Shahare</h1>
+      <p class="lead">Researcher working at the intersection of <strong>concurrent systems, high-performance computing, formal verification, and compiler technologies.</strong></p>
+      <p class="muted">PhD in Computer Science and Engineering · Indian Institute of Technology Dharwad</p>
+      <div class="actions"><a class="button" href="#research">Explore research</a><a class="button secondary" href="#contact">Get in touch</a></div>
+      <div class="profile-links"><a href="https://scholar.google.com/citations?user=DpR8LFIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://github.com/vivek-shahare" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/vivek-shahare/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://orcid.org/0000-0001-6438-673X" target="_blank" rel="noreferrer">ORCID</a></div>
     </div>
-    <aside class="profile-card">
-      <div class="avatar">VS</div>
-      <h2>Vivek Shahare</h2>
-      <p>PhD in Computer Science &amp; Engineering</p>
-      <p>Research interests: concurrency, verification, HPC, LLVM/MLIR</p>
-      <div class="links"><a href="https://github.com/vivek-shahare">GitHub</a><a href="#publications">Publications</a></div>
-    </aside>
+    <aside class="hero-card"><div class="initials">VS</div><h2>Research interests</h2><ul><li>Concurrent algorithms & synchronization</li><li>Multicore scalability & HPC</li><li>Formal verification & model checking</li><li>LLVM & MLIR</li></ul></aside>
   </div>
 </section>
 
-<section id="about" class="section">
-<div class="container narrow">
-  <p class="eyebrow">About</p><h2>Research with a systems perspective.</h2>
-  <p>I am a Computer Science researcher with a background in concurrent algorithms, synchronization primitives, formal verification, and high-performance computing. My doctoral research focused on scalable synchronization mechanisms for modern multicore systems and on improving their robustness against programming errors.</p>
-  <p>My current interests extend toward compiler infrastructure, particularly LLVM and MLIR, with the goal of connecting compiler techniques with efficient and reliable parallel systems.</p>
-</div></section>
+<section id="about" class="section"><div class="container two-col"><div><p class="eyebrow">About</p><h2>Building systems that are fast, scalable, and reliable.</h2></div><div><p>I am a computer scientist whose research focuses on concurrent and parallel systems, synchronization mechanisms, formal verification, and performance optimization on modern multicore architectures.</p><p>My doctoral research at the Indian Institute of Technology Dharwad focused on concurrency and optimizations in modern multi-core architectures. A major part of this work investigated programming errors in lock-based synchronization and led to <strong>Lock Shielding</strong>, a technique for protecting locks against misuse while retaining their scalability.</p><p>I also work with model checking and formal methods, including SPIN/Promela, NuSMV, LTL properties, and counter abstraction. More recently, I have been expanding toward compiler infrastructure, particularly LLVM and MLIR, for high-performance and parallel applications.</p></div></div></section>
 
-<section id="research" class="section alt"><div class="container">
-  <p class="eyebrow">Research</p><h2>Areas of interest</h2>
-  <div class="cards">
-    <article><span>01</span><h3>Concurrent Algorithms</h3><p>Scalable synchronization and concurrent data structures for multicore systems.</p></article>
-    <article><span>02</span><h3>Formal Verification</h3><p>Model checking and systematic reasoning about safety and liveness of concurrent algorithms.</p></article>
-    <article><span>03</span><h3>High-Performance Computing</h3><p>Performance evaluation and optimization of parallel software and synchronization mechanisms.</p></article>
-    <article><span>04</span><h3>Compilers &amp; MLIR</h3><p>Exploring LLVM and MLIR for compiler-assisted optimization of parallel and high-performance applications.</p></article>
-  </div>
-</div></section>
+<section id="research" class="section alt"><div class="container"><p class="eyebrow">Research</p><h2>Research directions</h2><div class="cards">
+<article class="card"><span>01</span><h3>Concurrent Systems</h3><p>Scalable synchronization algorithms and concurrent data structures for modern multicore and NUMA systems.</p></article>
+<article class="card"><span>02</span><h3>Lock Shielding</h3><p>Misuse-resilient synchronization that detects and handles unbalanced lock and unlock operations.</p></article>
+<article class="card"><span>03</span><h3>Formal Verification</h3><p>Safety, liveness, fairness, and parameterized reasoning for synchronization algorithms using model checking.</p></article>
+<article class="card"><span>04</span><h3>High-Performance Computing</h3><p>Performance analysis using multicore benchmarks, CPU affinity, hardware counters, and NUMA-aware experimentation.</p></article>
+<article class="card"><span>05</span><h3>Compiler Technologies</h3><p>Exploring LLVM and MLIR for compiler-based optimization of parallel and high-performance software.</p></article>
+<article class="card"><span>06</span><h3>Computer Architecture</h3><p>Understanding the interaction between synchronization, memory systems, processor architecture, and scalability.</p></article>
+</div></div></section>
 
-<section id="publications" class="section"><div class="container">
-  <p class="eyebrow">Publications</p><h2>Selected work</h2>
-  <div class="notice">Publication metadata can be populated from your BibTeX file. The structure below is ready for your papers.</div>
-  <div class="publication"><div class="year">20XX</div><div><h3>Title of your publication</h3><p>Vivek Shahare and co-authors. <em>Venue / Journal</em>.</p><div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">BibTeX</a></div></div></div>
-  <div class="publication"><div class="year">20XX</div><div><h3>Another research contribution</h3><p>Vivek Shahare and co-authors. <em>Venue / Conference</em>.</p><div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">BibTeX</a></div></div></div>
-</div></section>
+<section id="publications" class="section"><div class="container"><p class="eyebrow">Publications</p><h2>Selected research</h2><article class="publication featured"><div class="pub-year">2026</div><div><h3>Lock Shielding: A General Technique for Misuse-Resilient Locks</h3><p>Research on protecting synchronization primitives against programming errors while preserving scalability and performance.</p><p class="tags"><span>Concurrent Systems</span><span>Synchronization</span><span>Multicore</span></p></div></article><article class="publication"><div class="pub-year">Research</div><div><h3>Protecting Locks Against Unbalanced Unlock()</h3><p>Investigation of unbalanced unlock operations and mechanisms for detecting and mitigating synchronization misuse.</p></div></article><p class="note">For the complete and current publication record, see <a href="https://scholar.google.com/citations?user=DpR8LFIAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>. Publication metadata, DOI links, PDFs, and BibTeX can be added here as individual entries.</p></div></section>
 
-<section id="projects" class="section alt"><div class="container"><p class="eyebrow">Projects</p><h2>Research software &amp; experiments</h2>
-  <div class="project-grid">
-    <article class="project"><p class="tag">Concurrency</p><h3>Lock Shielding</h3><p>A research direction focused on protecting synchronization primitives from common programming errors while preserving scalability and performance.</p><a href="#">Project details →</a></article>
-    <article class="project"><p class="tag">Verification</p><h3>Formal Verification of Locks</h3><p>Models and experiments for checking safety and liveness properties of scalable lock algorithms using model checking.</p><a href="#">Project details →</a></article>
-    <article class="project"><p class="tag">Compilers</p><h3>LLVM / MLIR Exploration</h3><p>Investigations into compiler infrastructure and its potential for optimizing parallel and high-performance software.</p><a href="#">Project details →</a></article>
-  </div>
-</div></section>
+<section id="projects" class="section alt"><div class="container"><p class="eyebrow">Projects</p><h2>Research software & projects</h2><div class="project-list">
+<article class="project"><div class="project-number">01</div><div><h3>Lock Shielding</h3><p>A framework for making synchronization primitives resilient to programming errors. Implementations explore thread-local lock tracking, array-based tracking, hash-assisted tracking, reentrancy detection, and unbalanced lock/unlock detection.</p><p class="stack">C/C++ · POSIX threads · TLS · multicore systems</p></div></article>
+<article class="project"><div class="project-number">02</div><div><h3>Formal Verification of Synchronization Algorithms</h3><p>Verification models for scalable locks using explicit-state and symbolic model checking, with safety, liveness, fairness, and parameterized verification considerations.</p><p class="stack">SPIN · Promela · NuSMV · LTL · counter abstraction</p></div></article>
+<article class="project"><div class="project-number">03</div><div><h3>Lock Performance Analysis</h3><p>Experimental evaluation of synchronization algorithms using hardware performance counters and parallel benchmark suites.</p><p class="stack">Linux · perf · PAPI · PARSEC · SPLASH-2x · Synchrobench</p></div></article>
+<article class="project"><div class="project-number">04</div><div><h3>Compiler & MLIR Research</h3><p>Exploring LLVM and MLIR as platforms for compiler research, intermediate representations, and architecture-aware optimization of parallel applications.</p><p class="stack">LLVM · MLIR · SSA · compiler optimization</p></div></article>
+</div></div></section>
 
-<section id="teaching" class="section"><div class="container narrow"><p class="eyebrow">Teaching</p><h2>Teaching &amp; mentoring</h2><p>Teaching interests include Data Structures, Algorithms, Operating Systems, Parallel Programming, Compiler Design, and Computer Architecture.</p><p>Lecture slides, programming demonstrations, and other teaching material will be added here.</p></div></section>
+<section id="experience" class="section"><div class="container two-col"><div><p class="eyebrow">Experience</p><h2>Academic & research experience</h2></div><div class="timeline">
+<div class="timeline-item"><h3>Indian Institute of Technology Dharwad</h3><p class="role">PhD Researcher / Graduate Teaching Assistant</p><p>Research in concurrent algorithms, multicore scalability, synchronization mechanisms, formal verification, and performance analysis.</p></div>
+<div class="timeline-item"><h3>Tata Consultancy Services</h3><p class="role">Research Intern</p><p>Research internship involving high-performance computing and systems research.</p></div>
+<div class="timeline-item"><h3>University of Petroleum and Energy Studies</h3><p class="role">Assistant Professor</p><p>Teaching and academic responsibilities in computer science and engineering.</p></div>
+<div class="timeline-item"><h3>Parul University, Vadodara</h3><p class="role">Assistant Professor</p><p>Teaching undergraduate computer science courses and academic activities.</p></div>
+<div class="timeline-item"><h3>VNIT Nagpur</h3><p class="role">Teaching Assistant</p><p>Teaching assistance and laboratory instruction in computer science.</p></div>
+</div></div></section>
 
-<section id="cv" class="section alt"><div class="container cv-box"><div><p class="eyebrow">Curriculum Vitae</p><h2>Academic profile</h2><p>Download my current CV for education, research experience, publications, teaching, awards, and professional activities.</p></div><a class="btn primary" href="assets/cv.pdf">Download CV</a></div></section>
+<section id="education" class="section alt"><div class="container"><p class="eyebrow">Education</p><h2>Academic background</h2><div class="education-grid"><article><h3>PhD</h3><p>Computer Science and Engineering</p><strong>Indian Institute of Technology Dharwad</strong><p>Research: Concurrency and Optimizations in Modern Multi-core Architectures</p><p>Advisor: Dr. Nikhil Hegde</p></article><article><h3>M.Tech</h3><p>Computer Science and Engineering</p><strong>Visvesvaraya National Institute of Technology, Nagpur</strong></article><article><h3>B.Tech</h3><p>Computer Science and Engineering</p><strong>Government College of Engineering, Amravati</strong></article></div></div></section>
 
-<section id="contact" class="section"><div class="container narrow"><p class="eyebrow">Contact</p><h2>Let's connect.</h2><p>I am interested in research discussions and collaborations around concurrent systems, formal verification, high-performance computing, and compiler technologies.</p><div class="contact-links"><a href="mailto:your-email@example.com">Email</a><a href="https://github.com/vivek-shahare">GitHub</a><a href="#">Google Scholar</a><a href="#">ORCID</a><a href="#">LinkedIn</a></div></div></section>
+<section id="teaching" class="section"><div class="container two-col"><div><p class="eyebrow">Teaching</p><h2>Teaching interests</h2></div><div class="teaching-grid"><span>Data Structures</span><span>Algorithms</span><span>Operating Systems</span><span>Computer Architecture</span><span>Parallel Programming</span><span>High-Performance Computing</span><span>Compiler Design</span><span>Programming in C/C++</span></div></div></section>
+
+<section id="talks" class="section alt"><div class="container two-col"><div><p class="eyebrow">Talks & activities</p><h2>Academic communication</h2></div><div><p>I give research seminars, conference presentations, workshop talks, guest lectures, and technical demonstrations on concurrent systems, synchronization, formal verification, HPC, and computer science fundamentals.</p><p>Slides and presentation materials will be linked here as they become available.</p></div></div></section>
+
+<section id="cv" class="section"><div class="container cv-box"><div><p class="eyebrow">Curriculum Vitae</p><h2>Academic CV</h2><p>Download the latest version of my CV for education, research experience, publications, teaching, skills, and professional activities.</p></div><a class="button" href="#" onclick="alert('Add your CV PDF at assets/Vivek_Shahare_CV.pdf and update this link.'); return false;">Download CV</a></div></section>
+
+<section id="contact" class="section alt"><div class="container"><p class="eyebrow">Contact</p><h2>Let's connect</h2><p class="contact-intro">I am interested in research collaborations and discussions around concurrent systems, high-performance computing, formal verification, compiler technologies, and MLIR.</p><div class="contact-grid"><a href="mailto:vivek.shahare26@gmail.com"><small>Email</small><strong>vivek.shahare26@gmail.com</strong></a><a href="https://github.com/vivek-shahare" target="_blank" rel="noreferrer"><small>GitHub</small><strong>github.com/vivek-shahare</strong></a><a href="https://scholar.google.com/citations?user=DpR8LFIAAAAJ&hl=en" target="_blank" rel="noreferrer"><small>Google Scholar</small><strong>Publication profile</strong></a><a href="https://www.linkedin.com/in/vivek-shahare/" target="_blank" rel="noreferrer"><small>LinkedIn</small><strong>linkedin.com/in/vivek-shahare</strong></a><a href="https://orcid.org/0000-0001-6438-673X" target="_blank" rel="noreferrer"><small>ORCID</small><strong>0000-0001-6438-673X</strong></a></div></div></section>
 </main>
-<footer><div class="container"><p>© 2026 Vivek Shahare</p><p>Hosted with GitHub Pages · <a href="https://github.com/vivek-shahare">vivek-shahare</a></p></div></footer>
+<footer><div class="container footer"><span>© 2026 Vivek Shahare</span><span>Built with GitHub Pages</span></div></footer>
 <script src="assets/script.js"></script>
 </body></html>
